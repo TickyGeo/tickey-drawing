@@ -1,0 +1,32 @@
+body {
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toolbar {
+    margin: 10px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#board {
+    border: 1px solid black;
+    background: white;
+    cursor: crosshair;
+}
+
+#toolbar button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#toolbar button.active {
+    background: #4a90d9;
+    color: white;
+    border: 1px solid #2f6fb0;
+}
